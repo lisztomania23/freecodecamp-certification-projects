@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Views on the Big Bang Theory</h1>
+      <p id="description">
+        Thank you for taking the time to share your views.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input type="number" name="age" id="number" min="1" max="200" class="form-control" placeholder="Age" />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="scientist">Cosmologist</option>
+          <option value="teacher">Teacher</option>
+          <option value="enthusiast">Cosmology Enthusiast</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Do you believe in the Big Bang Theory?</p>
+        <label>
+          <input name="belief" value="yes" type="radio" class="input-radio" checked />Yes</label>
+        <label>
+          <input name="belief" value="no" type="radio" class="input-radio" />No</label>
+      </div>
+
+      <div class="form-group">
+        <p>What aspects of the Big Bang Theory interest you the most?</p>
+        <select id="interests" name="interests" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="expansion">Universe Expansion</option>
+          <option value="cosmic-microwave-background">Cosmic Microwave Background</option>
+          <option value="primordial-nucleosynthesis">Primordial Nucleosynthesis</option>
+          <option value="dark-matter">Dark Matter</option>
+          <option value="dark-energy">Dark Energy</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Which related topics would you like to learn more about?</p>
+        <label><input name="topics" value="cosmic-inflation" type="checkbox" class="input-checkbox" />Cosmic
+          Inflation</label>
+        <label>
+          <input name="topics" value="black-holes" type="checkbox" class="input-checkbox" />Black Holes</label>
+        <label><input name="topics" value="early-universe" type="checkbox" class="input-checkbox" />Early
+          Universe</label>
+        <label><input name="topics" value="dark-matter" type="checkbox" class="input-checkbox" />Dark Matter</label>
+      </div>
+      <div class="form-group">
+        <p>Comment</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
