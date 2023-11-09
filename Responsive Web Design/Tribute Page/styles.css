@@ -141,3 +141,11 @@ p {
 a {
     color: rgb(54, 0, 31);
 }
+
+html{
+    cursor: url("img/cheems-cursor.png"), auto;
+}
+
+a:hover, a, a:focus, video {
+    cursor: url("img/bonk-doge-cursor.png"), auto;
+}
